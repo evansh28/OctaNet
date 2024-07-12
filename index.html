@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Go - Traveling Company</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Include custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body class="bg-blue-200">
+
+    <!-- Navigation -->
+    <nav class="bg-blue-900 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="./assets/images/fly.png" alt="Let's Go Logo" class="h-8 mr-4">
+                <span class="text-lg font-bold">Let's Go</span>
+            </div>
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="#about" class="hover:text-gray-300">About</a>
+                <a href="#plans" class="hover:text-gray-300">Plans</a>
+                <a href="#reviews" class="hover:text-gray-300">Reviews</a>
+                <a href="#contact" class="hover:text-gray-300">Contact Us</a>
+            </div>
+            <button id="mobile-menu-btn" class="md:hidden focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none"
+                    viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="py-0 bg-blue-900 p-3 text-white sm:p-0">
+        <div class="container mx-auto text-center">
+            <img src="./assets/images/Hero.jpg" alt="Hero Image"
+                class="mx-auto h-96 w-full object-cover mb-8 rounded-lg shadow-md">
+            <h1 class="text-4xl font-bold mb-4">Explore the World with Let's Go</h1>
+            <p class="text-lg">Your ultimate travel companion</p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 p-3">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-center">
+            <img src="./assets/images/About.jpg" alt="About Image"
+                class="w-full h-96 md:w-1/2 rounded-lg shadow-md mb-8 md:mb-0">
+            <div class="md:w-1/2 md:ml-8">
+                <h2 class="text-3xl font-bold mb-4">About Let's Go</h2>
+                <p class="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at erat ac nulla
+                    consectetur consequat vel id ante. Suspendisse potenti.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plans Section -->
+    <section id="plans" class="py-20 bg-blue-200 p-3 sm:p-0">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Our Plans</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Plan Card Example -->
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-bold mb-4">Basic Plan</h3>
+                    <p class="mb-4">$99/month</p>
+                    <ul class="text-left">
+                        <li>Feature 1</li>
+                        <li>Feature 2</li>
+                        <li>Feature 3</li>
+                    </ul>
+                    <button
+                        class="mt-4 bg-blue-900 text-white px-4 py-2 rounded-md hover:bg-blue-800">Choose
+                        Plan</button>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-bold mb-4">Basic Plan</h3>
+                    <p class="mb-4">$99/month</p>
+                    <ul class="text-left">
+                        <li>Feature 1</li>
+                        <li>Feature 2</li>
+                        <li>Feature 3</li>
+                    </ul>
+                    <button
+                        class="mt-4 bg-blue-900 text-white px-4 py-2 rounded-md hover:bg-blue-800">Choose
+                        Plan</button>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <h3 class="text-xl font-bold mb-4">Basic Plan</h3>
+                    <p class="mb-4">$99/month</p>
+                    <ul class="text-left">
+                        <li>Feature 1</li>
+                        <li>Feature 2</li>
+                        <li>Feature 3</li>
+                    </ul>
+                    <button
+                        class="mt-4 bg-blue-900 text-white px-4 py-2 rounded-md hover:bg-blue-800">Choose
+                        Plan</button>
+                </div>
+
+
+                <!-- Repeat for other plans -->
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-20 p-3">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Customer Reviews</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Review Card Example -->
+                <div class="bg-white rounded-lg shadow-md p-6">
+                    <p class="mb-4">"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam at erat ac nulla
+                        consectetur consequat vel id ante."</p>
+                    <p class="font-bold">John Doe</p>
+                    <p class="text-sm">New York, USA</p>
+                </div>
+                <!-- Repeat for other reviews -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="py-20 bg-blue-900 text-white p-3 sm:p-0">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-8">Contact Us</h2>
+            <p class="mb-8">Have a question? Feel free to reach out to us.</p>
+            <form action="#" class="max-w-lg mx-auto">
+                <input type="text" placeholder="Your Name" class="w-full bg-white rounded-md px-4 py-2 mb-4">
+                <input type="email" placeholder="Your Email" class="w-full bg-white rounded-md px-4 py-2 mb-4">
+                <textarea placeholder="Your Message" rows="4"
+                    class="w-full bg-white rounded-md px-4 py-2 mb-4"></textarea>
+                <button type="submit"
+                    class="bg-blue-800 text-white px-6 py-3 rounded-md hover:bg-blue-700 focus:outline-none">Send
+                    Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-blue-900 text-white text-center py-4">
+        <p>&copy; 2024 Let's Go. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for mobile menu toggle -->
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function () {
+            var nav = document.querySelector('nav');
+            nav.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+
+</html>
